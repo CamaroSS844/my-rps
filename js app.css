@@ -1,0 +1,101 @@
+body {
+	background-color: rgb(67, 12, 117);
+	font-family: cursive;
+	font-size: 1.5em;
+	text-align: center;
+	color: rgb(236, 236, 247);
+}
+#score-board {
+	text-align: center;
+}
+#player {
+	display: inline-table;
+	margin-right: 500px;
+}
+#computer {
+	display: inline-table;
+}
+#welcome {
+	margin: 50px auto;
+	transition: 5s ease-out;
+}
+h1 {
+	font-size: 3em;
+}
+button {
+	background: none;
+	border: none;
+	color: white;
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+	font-size: 1em;
+	background-color: rgb(34, 119, 34);
+	cursor: pointer;
+}
+button:active {
+	background-color: rgb(4, 66, 4);
+}
+button:focus {
+	border: none;
+}
+#play {
+	margin-bottom: 50px;
+}
+.choice {
+	margin-top: -100px;
+}
+.output {
+	font-size: 2em;
+	margin: 0;
+}
+#game {
+	background-color: inherit;
+}
+#player-choice {
+	transform: rotateY(180deg);
+	display: inline-flex;
+}
+.playC {
+	display: none;
+}
+.playC.active {
+	display: block;
+	margin-left: 180px;
+	margin-right: 10px;
+}
+#computer-choice {
+	display: inline-flex;
+}
+.computerC {
+	display: none;
+}
+.computerC.active {
+	display: block;
+}
+/*transition to game*/
+.inact {
+	display: none;
+}
+.hidden {
+	opacity: 0;
+}
+.visible {
+	opacity: 1;
+}
+/*the game*/
+.jump {
+	animation-name: jump;
+	animation-direction: alternate;
+	animation-iteration-count: 5;
+	animation-duration: 0.25s;
+	animation-fill-mode: backwards;
+}
+@keyframes jump {
+	0% {
+		position: initial;
+	}
+	100% {
+		transform: translateY(50px);
+	}
+}
